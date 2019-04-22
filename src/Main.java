@@ -6,16 +6,16 @@ public class Main {
         int levelCompleted = 5;
         int bonus = 100;
 
-        if(gameOver) {
-            int finalScore = score + (levelCompleted * bonus);
-            finalScore += 1000;
-            System.out.println("Final Score: " + finalScore);
-        }
+        calculateScore(gameOver, score, levelCompleted, bonus);
 
         score = 1000;
         levelCompleted = 8;
         bonus = 200;
 
+        calculateScore(gameOver, score, levelCompleted, bonus);
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if(gameOver) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
