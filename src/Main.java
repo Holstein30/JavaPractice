@@ -19,6 +19,11 @@ public class Main {
         highScorePosition = HighScore.calculateHighScorePosition(1000);
         HighScore.displayHighScorePosition("Jacob", highScorePosition);
 
+        System.out.println("\n -------------------------- \n");
+
+        imperialToMetric.calcFeetAndInchesToCentimeters(6, 0);
+        imperialToMetric.calcFeetAndInchesToCentimeters(100);
+
 
     }
 }
