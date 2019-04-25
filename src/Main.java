@@ -23,7 +23,9 @@ public class Main {
 
         imperialToMetric.calcFeetAndInchesToCentimeters(6, 0);
         imperialToMetric.calcFeetAndInchesToCentimeters(100);
-
-
+        imperialToMetric.calcFeetAndInchesToCentimeters(-1, 1);
+        imperialToMetric.calcFeetAndInchesToCentimeters(2, 14);
+        imperialToMetric.calcFeetAndInchesToCentimeters(-12);
+        imperialToMetric.calcFeetAndInchesToCentimeters(8, -1);
     }
 }
