@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         HighScore.newScores();
-        
+
         int highScorePosition = HighScore.calculateHighScorePosition(1500);
         HighScore.displayHighScorePosition("John", highScorePosition);
 
