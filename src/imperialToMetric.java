@@ -10,4 +10,16 @@ public class imperialToMetric {
         return centimeters;
     }
 
+    public static double calcFeetAndInchesToCentimeters(double inches) {
+        if (inches < 0) {
+            System.out.println("Invalid inches");
+            return -1;
+        }
+
+        double feet = (int) inches / 12;
+        double remInches = (int) inches % 12;
+        System.out.println("Inches Converted = " + feet " feet " + remInches + " inches");
+        return calcFeetAndInchesToCentimeters(feet, remInches);
+    }
+
 }
