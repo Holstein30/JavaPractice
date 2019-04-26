@@ -5,6 +5,9 @@ public class Main {
         String answer = GetDuration.getDurationString(143, 59);
         System.out.println(answer);
 
+        answer = GetDuration.getDurationString(4000);
+        System.out.println(answer);
+
 //        HighScore.newScores();
 //
 //        int highScorePosition = HighScore.calculateHighScorePosition(1500);
