@@ -1,10 +1,17 @@
 public class GetDuration {
-    public static long getDurationString(long minutes, long seconds) {
+    public static String getDurationString(long minutes, long seconds) {
         if((minutes < 0) || (seconds < 0) || (seconds > 59)) {
-            System.out.println("Invalid");
-            return -1;
+            return "Invalid";
         }
-        System.out.println("valid");
-        return 0;
+
+
+        long mins = minutes;
+        mins += seconds / 60;
+        long minsToHours = mins / 60;
+        long remainingMins = mins % 60;
+        long remainingSecs = seconds % 60;
+        String result = minsToHours + "h " + remainingMins + "m " + remainingSecs + "s ";
+
+        return result;
     }
 }
