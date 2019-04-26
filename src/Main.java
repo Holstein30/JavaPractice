@@ -2,11 +2,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String answer = GetDuration.getDurationString(143, 59);
-        System.out.println(answer);
+     MinsToYearsAndDaysCalculator.printYearsAndDays(525600);
+     MinsToYearsAndDaysCalculator.printYearsAndDays(-1);
+     MinsToYearsAndDaysCalculator.printYearsAndDays(0);
+     MinsToYearsAndDaysCalculator.printYearsAndDays(1051200);
+     MinsToYearsAndDaysCalculator.printYearsAndDays(561600);
 
-        answer = GetDuration.getDurationString(4000);
-        System.out.println(answer);
+//        String answer = GetDuration.getDurationString(143, 59);
+//        System.out.println(answer);
+//
+//        answer = GetDuration.getDurationString(4000);
+//        System.out.println(answer);
 
 //        HighScore.newScores();
 //
