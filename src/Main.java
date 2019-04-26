@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String answer = GetDuration.getDurationString(120, 50);
+        String answer = GetDuration.getDurationString(143, 59);
         System.out.println(answer);
 
 //        HighScore.newScores();

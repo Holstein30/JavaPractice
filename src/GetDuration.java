@@ -5,10 +5,9 @@ public class GetDuration {
         }
 
 
-        long mins = minutes;
-        mins += seconds / 60;
-        long minsToHours = mins / 60;
-        long remainingMins = mins % 60;
+
+        long minsToHours = minutes / 60;
+        long remainingMins = minutes % 60;
         long remainingSecs = seconds % 60;
         String result = minsToHours + "h " + remainingMins + "m " + remainingSecs + "s ";
 
