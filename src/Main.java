@@ -2,11 +2,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-     MinsToYearsAndDaysCalculator.printYearsAndDays(525600);
-     MinsToYearsAndDaysCalculator.printYearsAndDays(-1);
-     MinsToYearsAndDaysCalculator.printYearsAndDays(0);
-     MinsToYearsAndDaysCalculator.printYearsAndDays(1051200);
-     MinsToYearsAndDaysCalculator.printYearsAndDays(561600);
+        IntEqualityPrinter.printEqual(1, 1, 1);
+        IntEqualityPrinter.printEqual(1, 1, 2);
+        IntEqualityPrinter.printEqual(-1,-1,-1);
+        IntEqualityPrinter.printEqual(1,2,3);
+
+//     MinsToYearsAndDaysCalculator.printYearsAndDays(525600);
+//     MinsToYearsAndDaysCalculator.printYearsAndDays(-1);
+//     MinsToYearsAndDaysCalculator.printYearsAndDays(0);
+//     MinsToYearsAndDaysCalculator.printYearsAndDays(1051200);
+//     MinsToYearsAndDaysCalculator.printYearsAndDays(561600);
 
 //        String answer = GetDuration.getDurationString(143, 59);
 //        System.out.println(answer);
