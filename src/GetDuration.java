@@ -19,12 +19,8 @@ public class GetDuration {
         }
 
         long secsToMins = seconds / 60;
-        long minsToHours = secsToMins / 60;
-        long remainingMins = secsToMins % 60;
         long remainingSecs = seconds % 60;
 
-        String result = minsToHours + "h " + remainingMins + "m " + remainingSecs + "s ";
-
-        return result;
+        return getDurationString(secsToMins, remainingSecs);
     }
 }
