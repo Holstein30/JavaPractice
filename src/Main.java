@@ -2,12 +2,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean answer = PlayingCat.isCatPlaying(true, 10);
-        System.out.println(answer);
-        answer = PlayingCat.isCatPlaying(false, 36);
-        System.out.println(answer);
-        answer = PlayingCat.isCatPlaying(false,35);
-        System.out.println(answer);
+        SwitchStatement.switchChars('a');
+        SwitchStatement.switchChars('b');
+        SwitchStatement.switchChars('e');
+
+//        boolean answer = PlayingCat.isCatPlaying(true, 10);
+//        System.out.println(answer);
+//        answer = PlayingCat.isCatPlaying(false, 36);
+//        System.out.println(answer);
+//        answer = PlayingCat.isCatPlaying(false,35);
+//        System.out.println(answer);
 
 //        IntEqualityPrinter.printEqual(1, 1, 1);
 //        IntEqualityPrinter.printEqual(1, 1, 2);
