@@ -1,11 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        int result = EvenDigitSum.getEvenDigitSum(123456789);
+        boolean result = SharedDigit.hasSharedDigit(12,23);
         System.out.println(result);
-        result = EvenDigitSum.getEvenDigitSum(252);
+        result = SharedDigit.hasSharedDigit(9,99);
         System.out.println(result);
-        result = EvenDigitSum.getEvenDigitSum(-22);
+        result = SharedDigit.hasSharedDigit(15,55);
+        System.out.println(result);
+        result = SharedDigit.hasSharedDigit(12,43);
         System.out.println(result);
 
     }
