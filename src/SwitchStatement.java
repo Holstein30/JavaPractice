@@ -1,17 +1,17 @@
 public class SwitchStatement {
 
-    public static void switchChars(char letter) {
-        switch (letter) {
-            case 'a':
+    public static void switchChars(String letter) {
+        switch (letter.toLowerCase()) {
+            case "a":
                 System.out.println("A");
                 break;
-            case 'b':
+            case "b":
                 System.out.println("B");
                 break;
-            case 'c':
+            case "c":
                 System.out.println("C");
                 break;
-            case 'd':
+            case "d":
                 System.out.println("D");
                 break;
             default:
