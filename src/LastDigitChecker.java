@@ -1,6 +1,6 @@
 public class LastDigitChecker {
     public static boolean hasSameLastDigit(int a, int b, int c) {
-        if((a < 10) || (a > 1000) || (b < 10) || (b > 1000) || (c < 10) || (c > 1000)){
+        if(!isValid(a) || !isValid(b) || !isValid(c)) {
             return false;
         }
 
@@ -12,5 +12,12 @@ public class LastDigitChecker {
             return true;
         }
         return false;
+    }
+
+    public static boolean isValid(int i) {
+        if ((i < 10) || (i > 1000)) {
+            return false;
+        }
+        return true;
     }
 }
