@@ -1,15 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        LastDigitChecker.hasSameLastDigit(51, 894, 777);
 
-        boolean result = LastDigitChecker.hasSameLastDigit(41, 22, 71);
+        int result = GreatestCommonDivisor.getGreatestCommonDivisor(25, 15);
         System.out.println(result);
-        result = LastDigitChecker.hasSameLastDigit(23, 32, 42);
+        result = GreatestCommonDivisor.getGreatestCommonDivisor(12, 30);
         System.out.println(result);
-        result = LastDigitChecker.hasSameLastDigit(9, 99, 999);
+        result = GreatestCommonDivisor.getGreatestCommonDivisor(9, 18);
         System.out.println(result);
-        result = LastDigitChecker.hasSameLastDigit(51, 894, 777);
+        result = GreatestCommonDivisor.getGreatestCommonDivisor(81, 153);
         System.out.println(result);
     }
 }
