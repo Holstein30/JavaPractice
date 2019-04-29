@@ -8,9 +8,9 @@ public class LastDigitChecker {
         int lastDigitB = b % 10;
         int lastDigitC = c % 10;
 
-        System.out.println(lastDigitA);
-        System.out.println(lastDigitB);
-        System.out.println(lastDigitC);
-        return true;
+        if((lastDigitA == lastDigitB) || (lastDigitA == lastDigitC) || (lastDigitB == lastDigitC)) {
+            return true;
+        }
+        return false;
     }
 }

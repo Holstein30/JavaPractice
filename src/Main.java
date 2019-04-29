@@ -3,14 +3,13 @@ public class Main {
     public static void main(String[] args) {
         LastDigitChecker.hasSameLastDigit(51, 894, 777);
 
-//        boolean result = SharedDigit.hasSharedDigit(12,23);
-//        System.out.println(result);
-//        result = SharedDigit.hasSharedDigit(9,99);
-//        System.out.println(result);
-//        result = SharedDigit.hasSharedDigit(15,55);
-//        System.out.println(result);
-//        result = SharedDigit.hasSharedDigit(12,43);
-//        System.out.println(result);
-
+        boolean result = LastDigitChecker.hasSameLastDigit(41, 22, 71);
+        System.out.println(result);
+        result = LastDigitChecker.hasSameLastDigit(23, 32, 42);
+        System.out.println(result);
+        result = LastDigitChecker.hasSameLastDigit(9, 99, 999);
+        System.out.println(result);
+        result = LastDigitChecker.hasSameLastDigit(51, 894, 777);
+        System.out.println(result);
     }
 }
