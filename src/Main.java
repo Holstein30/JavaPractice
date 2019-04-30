@@ -2,6 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        NumberToWords.numberToWords(41);
+        NumberToWords.numberToWords(100);
+
+        NumberToWords.getDigitCount(100);
     }
 }
