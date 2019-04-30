@@ -5,6 +5,11 @@ public class NumberToWords {
             return;
         }
 
+        if(number == 0) {
+            System.out.println("Zero");
+            return;
+        }
+
         int digitCount = getDigitCount(number);
         int numReversed = reverse(number);
         int reversedDigitCount = getDigitCount(numReversed);
