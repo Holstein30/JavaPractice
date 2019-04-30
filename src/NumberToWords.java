@@ -5,7 +5,9 @@ public class NumberToWords {
             return;
         }
 
+        int digitCount = getDigitCount(number);
         int numReversed = reverse(number);
+        int reversedDigitCount = getDigitCount(numReversed);
 
 
         while(numReversed != 0) {
@@ -44,9 +46,17 @@ public class NumberToWords {
             }
             numReversed /= 10;
         }
+
+        if(digitCount != reversedDigitCount) {
+            int remaining = digitCount - reversedDigitCount;
+            for(int i = 0; i < remaining; i++){
+                System.out.println("Zero");
+            }
+        }
     }
 
     public static int reverse(int number) {
+
 
         int reversed = 0;
 
@@ -69,7 +79,7 @@ public class NumberToWords {
             number /= 10;
             count++;
         }
-        
+
         return count;
     }
 }
