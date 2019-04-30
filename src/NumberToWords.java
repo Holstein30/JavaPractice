@@ -5,10 +5,11 @@ public class NumberToWords {
             return;
         }
 
+        int numReversed = reverse(number);
 
 
-        while(number > 0) {
-            int lastDigit = number % 10;
+        while(numReversed != 0) {
+            int lastDigit = numReversed % 10;
             switch(lastDigit) {
                 case 0:
                     System.out.println("Zero");
@@ -41,7 +42,20 @@ public class NumberToWords {
                     System.out.println("Nine");
                     break;
             }
+            numReversed /= 10;
+        }
+    }
+
+    public static int reverse(int number) {
+
+        int reversed = 0;
+
+        while(number != 0){
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
             number /= 10;
         }
+
+        return reversed;
     }
 }
