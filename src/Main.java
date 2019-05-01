@@ -2,15 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean result = FlourPacker.canPack(1,0,4);
+        int result = LargestPrime.getLargestPrime(21);
         System.out.println(result);
-        result = FlourPacker.canPack(1,0,5);
+        result = LargestPrime.getLargestPrime(217);
         System.out.println(result);
-        result = FlourPacker.canPack(0,5,4);
+        result = LargestPrime.getLargestPrime(0);
         System.out.println(result);
-        result = FlourPacker.canPack(2,2,11);
+        result = LargestPrime.getLargestPrime(45);
         System.out.println(result);
-        result = FlourPacker.canPack(-3,2,12);
+        result = LargestPrime.getLargestPrime(-1);
         System.out.println(result);
     }
 }
