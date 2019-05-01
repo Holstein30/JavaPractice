@@ -4,16 +4,23 @@ public class LargestPrime {
             return -1;
         }
 
-        int gcd = 0;
 
-        for(int i = 1; i <= number; i++){
-            if(number % i == 0 && i != number){
-                gcd = i;
+        int gcp = 0;
+        int newNum = number;
+
+        for(int i = 2; i <= number; i++){
+            if(newNum % i == 0){
+                gcp = i;
+                newNum /= i;
+                i--;
+                if(newNum == 1){
+                    break;
+                }
             }
         }
 
-        if(gcd > 1){
-            return gcd;
+        if(gcp > 1){
+            return gcp;
         }
 
         return -1;
