@@ -4,9 +4,19 @@ public class ReadingUserInput {
     public static void scannerDemo(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Year of birth: ");
-        int yearOfBirth = scanner.nextInt();
+        int age = 0;
+        boolean hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            int yearOfBirth = scanner.nextInt();
+            age = ageCalc(yearOfBirth);
+        } else {
+            System.out.println("Invalid number");
+            return;
+        }
+
         scanner.nextLine(); // handle enter key skipping name
-        int age = ageCalc(yearOfBirth);
+
+
         if(age == -1){
             System.out.println("Invalid Date of Birth");
             return;
