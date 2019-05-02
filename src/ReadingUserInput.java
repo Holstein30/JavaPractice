@@ -5,6 +5,7 @@ public class ReadingUserInput {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Year of birth: ");
         int yearOfBirth = scanner.nextInt();
+        scanner.nextLine(); // handle enter key skipping name
         int age = ageCalc(yearOfBirth);
         System.out.println("Name: ");
         String name = scanner.nextLine();
