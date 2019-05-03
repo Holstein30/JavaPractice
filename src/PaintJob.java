@@ -6,14 +6,14 @@ public class PaintJob {
         }
 
         double area = width * height;
-        System.out.println(area);
+//        System.out.println(area);
 
-        double bucketsNeeded = Math.ceil(area / areaPerBucket);
-        System.out.println(bucketsNeeded);
+        double totalBucketsNeeded = Math.ceil(area / areaPerBucket);
+//        System.out.println(totalBucketsNeeded);
 
-        int remainingBuckets = (int) bucketsNeeded - extraBuckets;
-        System.out.println(remainingBuckets);
+        int remainingBucketsNeeded = (int) totalBucketsNeeded - extraBuckets;
+//        System.out.println(remainingBucketsNeeded);
 
-        return 0;
+        return remainingBucketsNeeded;
     }
 }
