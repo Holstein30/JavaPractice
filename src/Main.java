@@ -18,5 +18,11 @@ public class Main {
         System.out.println("Result: " + result);
         result = PaintJob.getBucketCount(7.25,4.3,2.35);
         System.out.println("Result: " + result);
+        result = PaintJob.getBucketCount(3.4,1.5);
+        System.out.println("Result: " + result);
+        result = PaintJob.getBucketCount(6.26,2.2);
+        System.out.println("Result: " + result);
+        result = PaintJob.getBucketCount(3.26,0.75);
+        System.out.println("Result: " + result);
     }
 }
