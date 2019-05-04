@@ -10,6 +10,7 @@ public class Main {
 
         porsche.setModel("Cayman");
         lamborghini.setModel("Diablo");
-        
+
+        System.out.println("Porsche " + porsche.getModel());
     }
 }
