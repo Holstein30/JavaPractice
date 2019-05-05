@@ -38,6 +38,4 @@ public class SimpleCalculator {
         return this.firstNumber / this.secondNumber;
     }
 
-
-
 }
