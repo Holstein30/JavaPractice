@@ -15,4 +15,23 @@ public class Person {
     public int getAge(){
         return this.age;
     }
+
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
+    public void setAge(int age){
+        if(age < 0 || age > 100){
+            this.age = 0;
+        } else {
+            this.age = age;
+        }
+    }
+
+    
+
 }
