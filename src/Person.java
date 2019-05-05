@@ -32,6 +32,24 @@ public class Person {
         }
     }
 
-    
+    public boolean isTeen(){
+        if(this.age > 12 && this.age < 20){
+            return true;
+        }
+
+        return false;
+    }
+
+    public String getFullName(){
+        if(this.firstName.isEmpty() && this.lastName.isEmpty()){
+            return "";
+        } else if (this.firstName.isEmpty()){
+            return this.lastName;
+        } else if (this.lastName.isEmpty()){
+            return this.firstName;
+        } else {
+            return this.firstName + this.lastName;
+        }
+    }
 
 }
