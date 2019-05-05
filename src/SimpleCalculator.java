@@ -19,4 +19,25 @@ public class SimpleCalculator {
         this.secondNumber = secondNumber;
     }
 
+    public double getAdditionResult(){
+        return this.firstNumber + this.secondNumber;
+    }
+
+    public double getSubtractionResult(){
+        return this.firstNumber - this.secondNumber;
+    }
+
+    public double getMultiplicationResult(){
+        return this.firstNumber * this.secondNumber;
+    }
+
+    public double getDivisionResult(){
+        if(this.secondNumber == 0){
+            return 0;
+        }
+        return this.firstNumber / this.secondNumber;
+    }
+
+
+
 }

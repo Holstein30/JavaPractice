@@ -9,14 +9,17 @@ public class Main {
 
         SimpleCalculator calculator = new SimpleCalculator();
 
-        calculator.setFirstNumber(5);
-        calculator.setSecondNumber(12);
+        calculator.setFirstNumber(5.0);
+        calculator.setSecondNumber(4);
 
-        double first = calculator.getFirstNumber();
-        double second = calculator.getSecondNumber();
-        System.out.println(first);
-        System.out.println(second);
+        System.out.println("add = " + calculator.getAdditionResult());
+        System.out.println("subtract = " + calculator.getSubtractionResult());
 
+        calculator.setFirstNumber(5.25);
+        calculator.setSecondNumber(0);
+
+        System.out.println("multiply = " + calculator.getMultiplicationResult());
+        System.out.println("divide = " + calculator.getDivisionResult());
 
     }
 }
