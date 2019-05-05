@@ -7,19 +7,24 @@ public class Main {
     public static void main(String[] args) {
 
 
-        SimpleCalculator calculator = new SimpleCalculator();
+        Person person = new Person();
 
-        calculator.setFirstNumber(5.0);
-        calculator.setSecondNumber(4);
+        person.setFirstName("");
+        person.setLastName("");
+        person.setAge(10);
 
-        System.out.println("add = " + calculator.getAdditionResult());
-        System.out.println("subtract = " + calculator.getSubtractionResult());
+        System.out.println("Full Name = " + person.getFullName());
+        System.out.println("teen = " + person.isTeen());
 
-        calculator.setFirstNumber(5.25);
-        calculator.setSecondNumber(0);
+        person.setFirstName("John");
+        person.setAge(18);
 
-        System.out.println("multiply = " + calculator.getMultiplicationResult());
-        System.out.println("divide = " + calculator.getDivisionResult());
+        System.out.println("Full Name = " + person.getFullName());
+        System.out.println("teen = " + person.isTeen());
+
+        person.setLastName("Smith");
+
+        System.out.println("Full Name = " + person.getFullName());
 
     }
 }
