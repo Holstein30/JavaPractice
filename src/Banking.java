@@ -19,6 +19,10 @@ public class Banking {
         this.phoneNum = phoneNum;
     }
 
+    public Banking(String custName, String email, String phoneNum){
+        this(3, 0.00, custName, email, phoneNum);
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -37,6 +41,14 @@ public class Banking {
 
     public String getPhoneNum() {
         return phoneNum;
+    }
+
+    public void printAll(){
+        System.out.println(getAccountNumber());
+        System.out.println(getBalance());
+        System.out.println(getCustName());
+        System.out.println(getEmail());
+        System.out.println(getPhoneNum());
     }
 
     public void setAccountNumber(int accountNumber) {

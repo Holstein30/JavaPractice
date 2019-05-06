@@ -24,5 +24,17 @@ public class Main {
         fred.withdrawFunds(1000);
         System.out.println("Balance = " + fred.getBalance());
 
+        Banking bob = new Banking();
+
+        System.out.println(bob.getAccountNumber());
+        System.out.println(bob.getBalance());
+        System.out.println(bob.getCustName());
+        System.out.println(bob.getEmail());
+        System.out.println(bob.getPhoneNum());
+
+        Banking jon = new Banking("Jon Snow", "jon@lord.commander", "1800thewatch");
+
+        jon.printAll();
+
     }
 }
