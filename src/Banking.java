@@ -6,6 +6,18 @@ public class Banking {
     private String email;
     private String phoneNum;
 
+    public Banking(){
+        System.out.println("Empty Constructor");
+    }
+
+    public Banking(int accountNumber, double balance, String custName, String email, String phoneNum){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.custName = custName;
+        this.email = email;
+        this.phoneNum = phoneNum;
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
