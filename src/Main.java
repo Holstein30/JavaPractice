@@ -7,24 +7,19 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Person person = new Person();
+        Banking fred = new Banking();
 
-        person.setFirstName("");
-        person.setLastName("");
-        person.setAge(10);
+        fred.setAccountNumber(1);
+        fred.setBalance(500.00);
+        fred.setCustName("Fred Frederson");
+        fred.setEmail("fred@fred.fred");
+        fred.setPhoneNum("555-555-5555");
 
-        System.out.println("Full Name = " + person.getFullName());
-        System.out.println("teen = " + person.isTeen());
-
-        person.setFirstName("John");
-        person.setAge(18);
-
-        System.out.println("Full Name = " + person.getFullName());
-        System.out.println("teen = " + person.isTeen());
-
-        person.setLastName("Smith");
-
-        System.out.println("Full Name = " + person.getFullName());
+        System.out.println("Account # = " + fred.getAccountNumber());
+        System.out.println("Balance = " + fred.getBalance());
+        System.out.println("Name = " + fred.getCustName());
+        System.out.println("Email = " + fred.getEmail());
+        System.out.println("Phone = " + fred.getPhoneNum());
 
     }
 }
