@@ -21,5 +21,14 @@ public class Main {
         System.out.println("Email = " + fred.getEmail());
         System.out.println("Phone = " + fred.getPhoneNum());
 
+        fred.depositFunds(600);
+        System.out.println("Balance = " + fred.getBalance());
+
+        fred.withdrawFunds(800);
+        System.out.println("Balance = " + fred.getBalance());
+
+        fred.withdrawFunds(1000);
+        System.out.println("Balance = " + fred.getBalance());
+
     }
 }

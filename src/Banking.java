@@ -45,4 +45,17 @@ public class Banking {
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
+
+    public void depositFunds(double amount){
+        this.balance += amount;
+    }
+
+    public void withdrawFunds(double amount){
+        if(amount > this.balance){
+            System.out.println("Insufficient Funds");
+            return;
+        }
+
+        this.balance -= amount;
+    }
 }
