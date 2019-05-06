@@ -7,6 +7,7 @@ public class Banking {
     private String phoneNum;
 
     public Banking(){
+        this(2, 0.00, "default name", "default email", "default phone");
         System.out.println("Empty Constructor");
     }
 
