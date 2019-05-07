@@ -3,7 +3,7 @@ public class Point {
     private int y;
 
     public Point(){
-        // empty construct
+        this(0,0);
     }
 
     public Point(int x, int y) {
@@ -25,5 +25,13 @@ public class Point {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public double distance(){
+        return Math.sqrt( Math.pow(0-this.x,2) + Math.pow(0-this.y,2));
+    }
+
+    public double distance(int x, int y){
+        return Math.sqrt( Math.pow(x-this.x,2) + Math.pow(y-this.y,2));
     }
 }
