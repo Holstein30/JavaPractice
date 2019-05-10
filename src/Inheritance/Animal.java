@@ -20,8 +20,12 @@ public class Animal {
         System.out.println("Animal is eating");
     }
 
-    public void move(){
-        System.out.println("Animal is moving");
+    public void move(int speed){
+        if(speed > 10){
+            System.out.println("Animal is running");
+        } else {
+            System.out.println("Animal is walking");
+        }
     }
 
     public String getName() {

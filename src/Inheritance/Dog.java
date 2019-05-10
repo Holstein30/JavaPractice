@@ -26,4 +26,12 @@ public class Dog extends Animal {
         chew();
         super.eat();
     }
+
+    public void walk(){
+        move(5);
+    }
+
+    public void run(){
+        move(11);
+    }
 }
