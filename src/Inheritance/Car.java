@@ -26,6 +26,4 @@ public class Car extends Vehicle {
         System.out.println("Car.changeSpeed() : ");
     }
 
-
-
 }

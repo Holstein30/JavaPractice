@@ -16,12 +16,12 @@ public class Vehicle {
         this.currentDirection = 0;
     }
 
-    public void steer(int direction) {
+    public void steer(int direction){
         this.currentDirection += direction;
         System.out.println("Current Direction = " + currentDirection);
     }
 
-    public void move(int speed, int direction) {
+    public void move(int speed, int direction){
         currentSpeed = speed;
         currentDirection = direction;
         System.out.println("Current Speed = " + currentSpeed + " Current Direction = " + currentDirection);
@@ -45,5 +45,9 @@ public class Vehicle {
 
     public int getCurrentDirection() {
         return currentDirection;
+    }
+
+    public void stop(){
+        this.currentSpeed = 0;
     }
 }
