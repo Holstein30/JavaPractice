@@ -12,7 +12,7 @@ public class Circle {
     }
 
     public double getRadius() {
-        return radius;
+        return this.radius;
     }
 
     public double getArea(){
