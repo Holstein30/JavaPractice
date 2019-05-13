@@ -4,13 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Miata miata = new Miata(48);
+        Circle circle = new Circle(3.75);
 
-        miata.steer(45);
-        miata.accelerate(30);
-        miata.accelerate(30);
-        miata.stop();
-        miata.accelerate(0);
+        System.out.println("Radius = " + circle.getRadius());
+        System.out.println("Area = " + circle.getArea());
+
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+
+        System.out.println("Radius = " + cylinder.getRadius());
+        System.out.println("Height = " + cylinder.getHeight());
+        System.out.println("Area = " + cylinder.getArea());
+        System.out.println("Volume = " + cylinder.getVolume());
 
         }
     }
