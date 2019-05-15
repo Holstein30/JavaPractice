@@ -13,19 +13,15 @@ public class Room {
         this.walls = walls;
     }
 
-    public Bed getBed() {
-        return bed;
+    public void willTvFit(){
+        tvFitTest();
     }
 
-    public Desk getDesk() {
-        return desk;
-    }
-
-    public TV getTv() {
-        return tv;
-    }
-
-    public Walls getWalls() {
-        return walls;
+    private boolean tvFitTest(){
+        if(walls.getArea() > tv.getSize()){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
