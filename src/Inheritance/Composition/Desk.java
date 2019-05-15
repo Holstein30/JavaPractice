@@ -12,6 +12,7 @@ public class Desk {
     }
 
     public String getMaterial() {
+        System.out.println(material);
         return material;
     }
 

@@ -16,6 +16,7 @@ public class Bed {
     }
 
     public String getType() {
+        System.out.println(type);
         return type;
     }
 

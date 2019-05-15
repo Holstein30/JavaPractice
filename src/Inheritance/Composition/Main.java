@@ -5,17 +5,19 @@ public class Main {
     public static void main(String[] args) {
 
 
-            Dimensions dimensions = new Dimensions(20, 20, 5);
-            Case theCase = new Case("XI7", "Corsair", "Gold", dimensions);
-            Monitor monitor = new Monitor("24xl", "Benq", 24, new Resolution(1920, 1080));
-            Motherboard motherboard = new Motherboard("Mortar", "AMD", 4, 6, "v1");
+            Dimensions dimensions = new Dimensions(30, 25, 5);
+            Desk desk = new Desk("wood", dimensions);
+            TV tv = new TV("Samsung", 55, new Resolution(40, 50));
+            Bed bed = new Bed("King", "Water", new Dimensions(60, 36, 12));
+            Walls walls = new Walls(120, 120, "green");
 
-            PC pc = new PC(theCase, motherboard, monitor);
+            Room room = new Room(bed, desk, tv, walls);
 
-            pc.getMonitor().drawPixelAt(10, 20, "cyan");
-            pc.getMotherboard().programName("Halo");
-            pc.getTheCase().pressPowerButton();
-
+            room.willTvFit();
+            room.getWalls().getColor();
+            room.getTv().drawPixelAt(200, 200, "yellow");
+            room.getBed().getType();
+            room.getDesk().getMaterial();
 
 
         }

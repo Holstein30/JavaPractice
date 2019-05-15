@@ -24,6 +24,7 @@ public class Walls {
     }
 
     public String getColor() {
+        System.out.println(color);
         return color;
     }
 }
