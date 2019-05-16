@@ -19,6 +19,5 @@ public class Main {
             room.getBed().getType();
             room.getDesk().getMaterial();
 
-
         }
     }
