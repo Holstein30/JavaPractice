@@ -1,13 +1,12 @@
 public class Printer {
     private int tonerLevel = 10;
-    private int pagesPrinted;
+    private int pagesPrinted = 0;
     private boolean duplex;
 
-    public Printer(int tonerLevel, int pagesPrinted, boolean duplex) {
+    public Printer(int tonerLevel, boolean duplex) {
         if(tonerLevel > 0 || tonerLevel <= 10){
             this.tonerLevel = tonerLevel;
         }
-        this.pagesPrinted = pagesPrinted;
         this.duplex = duplex;
     }
 
