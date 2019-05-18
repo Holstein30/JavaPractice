@@ -6,12 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EnhancedPlayer player = new EnhancedPlayer("Nako", 50, "Bow");
-        System.out.println(player.getHealth());
-
-        int damage = 50;
-
-        player.loseHealth(damage);
+        Printer printer = new Printer(10, 0, false);
+        printer.getPagesPrinted();
+        printer.getTonerLevel();
+        printer.printPage();
+        printer.printPage();
+        printer.getPagesPrinted();
+        printer.getTonerLevel();
+        printer.fillToner();
+        printer.getTonerLevel();
 
     }
 }
