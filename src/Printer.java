@@ -21,6 +21,7 @@ public class Printer {
     }
 
     public boolean isDuplex() {
+        System.out.println("Duplex = " + duplex);
         return duplex;
     }
 
@@ -37,6 +38,5 @@ public class Printer {
         } else {
             System.out.println("Not enough toner");
         }
-
     }
 }

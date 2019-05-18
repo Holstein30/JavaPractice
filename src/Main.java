@@ -9,6 +9,7 @@ public class Main {
         Printer printer = new Printer(10, false);
         printer.getPagesPrinted();
         printer.getTonerLevel();
+        printer.isDuplex();
         printer.printPage();
         printer.printPage();
         printer.getPagesPrinted();
